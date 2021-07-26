@@ -30,7 +30,7 @@
 
 # Database.
 [database]
-    link  = "mysql:root:123456@tcp(localhost:3306)/gfast-v2-open"
+    link  = "mysql:root:123456@tcp(localhost:3306)/crm"
     charset   = "utf8mb4" #数据库编码
     debug = true
     dryRun = false #空跑
@@ -51,7 +51,7 @@
 #jwt配置
 [gToken]
     [gToken.system]
-        CacheMode = 2
+        CacheMode = 1
         CacheKey = "GToken:"
         Timeout = 3600000 #1个小时
         MaxRefresh = 0
